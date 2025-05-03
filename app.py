@@ -9,6 +9,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 import csv
 from openai import OpenAI
 import ast
+import os
+
 
 #Client for gen-AI. We are using Google's Gemma 3-27-b free version with Openrouter.ai 
 
