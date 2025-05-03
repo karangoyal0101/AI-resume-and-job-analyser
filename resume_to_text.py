@@ -1,6 +1,6 @@
 #Extract the data-
 
-import pymupdf # imports the pymupdf library
+import fitz  # imports the pymupdf library
 
 doc = pymupdf.open("manmeet_resume_april.pdf") # open a document
 for page in doc: # iterate the document pages
