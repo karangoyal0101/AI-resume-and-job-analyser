@@ -145,7 +145,7 @@ N = st.number_input("Enter number of top matches you want to see:", min_value=1,
 # --- Helper Functions ---
 def extract_text_from_pdf(pdf_file):
     pdf_bytes = pdf_file.read()
-    doc = pymupdf.open(stream=pdf_bytes, filetype="pdf")
+    doc = fitz.open(stream=pdf_bytes, filetype="pdf")
     text = ""
     for page in doc:
         text += page.get_text()
