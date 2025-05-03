@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
-import pymupdf 
+import fitz
 import re
 from io import StringIO
 from sklearn.feature_extraction.text import TfidfVectorizer
