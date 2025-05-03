@@ -14,7 +14,7 @@ import ast
 
 client = OpenAI(
   base_url="https://openrouter.ai/api/v1",
-  api_key="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",
+  api_key="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",
 )
 
 #Skill keywords will be used to find skills from jd
