@@ -11,12 +11,12 @@ from openai import OpenAI
 import ast
 import os
 
-
+api_key = st.secrets["OPENROUTER_API_KEY"]
 #Client for gen-AI. We are using Google's Gemma 3-27-b free version with Openrouter.ai 
 
 client = OpenAI(
   base_url="https://openrouter.ai/api/v1",
-  api_key = st.secrets["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"],
+  api_key = api_key,
 )
 
 #Skill keywords will be used to find skills from jd
